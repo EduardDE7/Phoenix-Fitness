@@ -1,0 +1,10 @@
+:root {
+  --main-clr: #0d141e;
+  --secondary-clr: #1e232a;
+  --dark-clr: #222;
+  --accent-clr: #ffba00;
+  --big-fz: calc(25px + (45 - 25) * ((100vw - 300px) / (1500 - 300)));
+  --medium-fz: calc(20px + (35 - 20) * ((100vw - 300px) / (1500 - 300)));
+  --small-fz: calc(14px + (18 - 14) * ((100vw - 300px) / (1500 - 300)));
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
