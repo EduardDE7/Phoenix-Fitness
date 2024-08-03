@@ -75,3 +75,19 @@ prev.addEventListener('click', () => {
   let slides = document.querySelectorAll('.slides');
   slider.prepend(slides[slides.length - 1]);
 });
+
+const scrollElements = document.querySelectorAll('.scroll-element');
+
+window.addEventListener('scroll', function () {
+  scrollElements.forEach((element) => {
+    let position = element.getBoundingClientRect();
+
+    if (
+      position.top < window.innerHeight &&
+      position.bottom >= 0 &&
+      !element.classList.contains('animated')
+    ) {
+      element.classList.add('show', 'animated');
+    }
+  });
+});
